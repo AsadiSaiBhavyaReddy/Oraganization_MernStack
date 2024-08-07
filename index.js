@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const client = new MongoClient('mongodb+srv://admin10:admin10@admin10.6lafpmt.mongodb.net/?retryWrites=true&w=majority&appName=admin10');
+const client = new MongoClient('#');
 client.connect();
 
 const db = client.db("skill");
